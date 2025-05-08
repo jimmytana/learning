@@ -20,3 +20,27 @@ for i in indices:
     a.insert(i+added_index, '_')
     added_index+=1
 print(''.join(a))
+second way
+def pascal_case(snake):
+    pascal_case = ""
+    # snake=[x for x in snake]
+    wasUnderscore = False
+    for i in range(len(snake)):
+        if wasUnderscore:
+            wasUnderscore = not wasUnderscore
+            continue
+        if snake[i]=="_":
+            pascal_case+=snake[i+1].capitalize()
+            wasUnderscore = not wasUnderscore
+            continue
+        else:
+            pascal_case+=snake[i]
+    return pascal_case.capitalize()
+    
+
+
+            
+
+snake=input("please enter a word in snake case :")
+a=pascal_case(snake)
+print(a)

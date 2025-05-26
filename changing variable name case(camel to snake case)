@@ -61,3 +61,11 @@ print(output_str)  # Output: camel_case_to_snake_case
 snake=input("please enter a word in snake case :")
 a=pascal_case(snake)
 print(a)
+
+
+
+program to convert in franheight from deggree celicius
+print ("hello lets we change our degrees in franheight let's go baby:")
+celicius=[0,20,30,40]
+franheight=[c*9/5 + 32 for c in celicius ]
+print(franheight)

@@ -69,3 +69,14 @@ print ("hello lets we change our degrees in franheight let's go baby:")
 celicius=[0,20,30,40]
 franheight=[c*9/5 + 32 for c in celicius ]
 print(franheight)
+
+
+aprogram to check if number greters 50 using list compression
+a=[]
+
+for x in range(5) :
+    b=input("please enter numbers you want to get from number which is > 50 :")
+    a.append(b)
+print(a)
+thanks=[x for x in a if x > 50]
+print(thanks)
